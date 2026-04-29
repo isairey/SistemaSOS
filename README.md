@@ -1,21 +1,140 @@
-# Healink-SOS
-**Sistema de Monitoreo y Alerta para Adultos Mayores**
+# 🏥🚨 HeaLink SOS  
+### Sistema Inteligente de Monitoreo y Alerta para Adultos Mayores
 
-HeaLink SOS es una solución integral de salud que combina movilidad, backend escalable y automatización DevOps. Diseñada bajo una arquitectura de microservicios, permite el monitoreo constante de signos vitales, gestión de medicamentos y alertas de emergencia en tiempo real.
+**HeaLink SOS** es una plataforma de salud digital diseñada para el **monitoreo continuo, prevención y respuesta ante emergencias médicas**, enfocada en adultos mayores.  
 
-## Funciones principales
+Integra aplicaciones móviles, backend escalable y arquitectura de microservicios para ofrecer una solución robusta, segura y en tiempo real.
 
-* **Autenticación de usuarios**: Gestión del inicio de sesión y validación de acceso al sistema.
-* **Gestión de perfil**: Registro y edición de información del usuario, incluyendo datos médicos críticos como tipo de sangre, alergias e historial clínico.
-* **Administración de contactos**: Configuración de números de emergencia con asignación de niveles de prioridad para la respuesta ante crisis.
-* **Control de medicinas**: Registro y almacenamiento de medicamentos y tratamientos activos para referencia médica.
-* **Módulo SOS**: Función principal que recibe telemetría (BPM y ubicación) y dispara automáticamente llamadas de voz y mensajes SMS mediante Twilio al detectar una emergencia.
-* **Persistencia híbrida**: Almacenamiento de perfiles y contactos en bases de datos relacionales (Oracle SQL) y del historial de biometría en bases de datos de alta velocidad (Oracle NoSQL).
+---
 
-## Stack Tecnológico Principal
+## 📌 Descripción
 
-* **Aplicación Móvil y Simulación**: Desarrollo en Java para la captura y envío de telemetría.
-* **Backend API**: TypeScript con Node.js, Express y TypeORM.
-* **Comunicaciones**: Twilio API para la gestión de mensajes SMS y llamadas de voz.
-* **Bases de datos**: Oracle DB para el manejo de información relacional y Oracle NoSQL para el almacenamiento de alta velocidad de telemetría.
-* **DevOps e Infraestructura**: Despliegue preparado para Ubuntu Sever, Docker y Kubernetes.
+HeaLink SOS permite supervisar el estado de salud de los usuarios mediante la recopilación de datos biométricos y su análisis en tiempo real.
+
+El sistema está diseñado para actuar de forma **automática ante situaciones críticas**, notificando a contactos de emergencia mediante llamadas y mensajes.
+
+---
+
+## 🎯 Objetivo
+
+Brindar una solución tecnológica que permita:
+
+- ❤️ Monitoreo continuo de signos vitales  
+- 🚨 Respuesta inmediata ante emergencias  
+- 👨‍👩‍👧‍👦 Conexión con contactos de confianza  
+- 📊 Gestión integral de información médica  
+
+---
+
+## 🚀 Funcionalidades principales
+
+### 🔐 Autenticación de usuarios
+- Registro e inicio de sesión seguro  
+- Validación de acceso  
+
+### 👤 Gestión de perfil
+- Información personal y médica  
+- Datos críticos: tipo de sangre, alergias, historial clínico  
+
+### 📞 Contactos de emergencia
+- Configuración de contactos  
+- Priorización de respuesta  
+
+### 💊 Control de medicamentos
+- Registro de tratamientos  
+- Seguimiento de medicamentos activos  
+
+### 🚨 Módulo SOS (Core del sistema)
+- Recepción de telemetría (BPM, ubicación)  
+- Detección automática de eventos críticos  
+- Activación de alertas en tiempo real  
+- Envío de SMS y llamadas mediante Twilio  
+
+### 💾 Persistencia híbrida
+- Datos estructurados en bases relacionales  
+- Telemetría en bases de alta velocidad  
+
+---
+
+## 🧠 Arquitectura del sistema
+
+HeaLink SOS está basado en una arquitectura de **microservicios**, lo que permite:
+
+- ⚡ Escalabilidad  
+- 🔄 Alta disponibilidad  
+- 🔐 Seguridad  
+- 🧩 Modularidad  
+
+---
+
+## 🛠️ Stack tecnológico
+
+### 📱 Aplicación móvil
+- **Java** → Captura y envío de datos biométricos  
+
+### ⚙️ Backend
+- **Node.js**  
+- **TypeScript**  
+- **Express**  
+- **TypeORM**  
+
+### 📡 Comunicaciones
+- **Twilio API** → SMS y llamadas de emergencia  
+
+### 🗄️ Bases de datos
+- **Oracle SQL** → Información estructurada  
+- **Oracle NoSQL** → Telemetría en tiempo real  
+
+### ☁️ DevOps & Infraestructura
+- **Docker** → Contenedorización  
+- **Kubernetes** → Orquestación  
+- **Ubuntu Server** → Entorno de despliegue  
+
+---
+
+## 🔄 Flujo de funcionamiento
+
+1. 📱 El dispositivo móvil captura datos biométricos  
+2. 📡 Se envían al backend en tiempo real  
+3. 🧠 El sistema analiza condiciones críticas  
+4. 🚨 Se activa el protocolo SOS si es necesario  
+5. 📞 Se notifican contactos mediante SMS/llamadas  
+6. 📊 Se registra el evento en la base de datos  
+
+---
+
+## 🎨 Características destacadas
+
+- ⚡ Respuesta en tiempo real  
+- 🔐 Seguridad de datos médicos  
+- 📱 Interfaz intuitiva  
+- 🌐 Sistema escalable  
+- 🤖 Automatización de emergencias  
+
+---
+
+## 📈 Futuro del proyecto
+
+- 🤖 Integración con IA para predicción de riesgos  
+- ⌚ Compatibilidad con wearables  
+- 📊 Dashboard clínico avanzado  
+- 🔔 Notificaciones push  
+- ☁️ Despliegue en cloud (AWS / Azure / GCP)  
+
+---
+
+## ⚠️ Nota
+
+Este sistema es una herramienta de apoyo y **no sustituye atención médica profesional**.
+
+---
+
+## 📄 Licencia
+
+Proyecto de uso académico y demostrativo.
+
+---
+
+## 👨‍💻 Autor
+
+Desarrollado por **Isai Reyes Peña**
