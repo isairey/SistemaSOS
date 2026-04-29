@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">HeaLinkSOS</string>
+    <string-array name="tipos_sangre">
+        <item>A+</item>
+        <item>A-</item>
+        <item>B+</item>
+        <item>B-</item>
+        <item>AB+</item>
+        <item>AB-</item>
+        <item>0+</item>
+        <item>0-</item>
+    </string-array>
+</resources>

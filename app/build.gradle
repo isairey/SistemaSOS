@@ -1,0 +1,52 @@
+plugins {
+    alias(libs.plugins.android.application)
+}
+
+android {
+    namespace 'com.main.healinksos'
+    compileSdk {
+        version = release(36) {
+            minorApiLevel = 1
+        }
+    }
+
+    defaultConfig {
+        applicationId "com.main.healinksos"
+        minSdk 26
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    // 1. ACTIVAR BUILDCONFIG
+    buildFeatures {
+        buildConfig true
+    }
+
+    buildTypes {
+        debug {
+            //Sustituye esta IP por la de tu compu real
+            buildConfigField "String", "API_BASE_URL", "\"http://10.0.2.2\""
+        }
+        release {
+            buildConfigField "String", "API_BASE_URL", "\"http://129.146.242.47\""
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+}
+
+dependencies {
+    implementation libs.appcompat
+    implementation libs.material
+    testImplementation libs.junit
+    androidTestImplementation libs.ext.junit
+    androidTestImplementation libs.espresso.core
+    implementation 'com.squareup.okhttp3:okhttp:4.10.0'
+    implementation 'org.osmdroid:osmdroid-android:6.1.18'
+}

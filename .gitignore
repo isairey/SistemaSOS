@@ -1,0 +1,27 @@
+# Android Studio / IntelliJ
+.idea/
+.gradle/
+*.iml
+*.iws
+*.ipr
+/captures
+.externalNativeBuild
+.cxx
+/build
+
+# Local configuration
+local.properties
+bundle.properties
+
+# Log files
+*.log
+
+# Mac / Windows files
+.DS_Store
+Thumbs.db
+
+# Output artifacts
+*.apk
+*.aar
+*.jks
+*.keystore
